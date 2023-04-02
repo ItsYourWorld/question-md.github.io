@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background: #202020;
+  font-family: Roboto;
+}
+
+.button-active {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #66ff00;
+  border-color: #66ff00;
+  font-size: 16px;
+  padding: 12px 16px;
+  background: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 6px;
+}
+
+.button-active span,
+.button-active i {
+  z-index: 2;
+}
+
+.button-active:active {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-active::before,
+.button-active::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.button-active::before {
+  background: rgba(102, 255, 0, 0.3);
+}
+
+.button-active:active::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 16px;
+  background: transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 6px;
+}
+
+.button span,
+.button i {
+  z-index: 2;
+}
+
+.button:active {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.button::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.button:active::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* --- Кнопка 1 --- */
+
+#button-1 i {
+  color: #9b59b6;
+}
+
+#button-1::before {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+}
+
+#button-1:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* --- Кнопка 2 --- */
+
+#button-2 i {
+  color: #9b59b6;
+
+}
+
+#button-2::before {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+}
+
+#button-2:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* --- Кнопка 3 --- */
+
+#button-3 i {
+  color: #9b59b6;
+}
+
+#button-3::before {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+}
+
+#button-3:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* --- Кнопка 4 --- */
+
+#button-4 i {
+  color: #9b59b6;
+}
+
+#button-4::before {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+}
+
+#button-4:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/* --- Кнопка 5 --- */
+
+#button-5 i {
+  color: #9b59b6;
+}
+
+#button-5::before {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+}
+
+#button-5:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.button i {
+  margin-right: 4px;
+}
+
+div {
+  margin: 24px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Roboto;
+  margin-top: 6px;
+}
